@@ -1,0 +1,24 @@
+{
+  "name": "b1910483_nguyen_thanh_vinh",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <17.0.0"
+  },
+  "workspaces": [
+    "backend/",
+    "frontend/"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev-*\"",
+    "dev-frontend": "npm run dev -w frontend",
+    "dev-backend": "npm run dev -w backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
